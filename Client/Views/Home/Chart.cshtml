@@ -1,0 +1,31 @@
+﻿@{
+	Layout = "NewLayout";
+}
+
+<div class="row justify-content-center">
+	<div class="col-6">
+		<div class="card shadow mb-4 col">
+			<div class="card-header py-3">
+				<h6 class="m-0 font-weight-bold text-primary">Chart Employee by Degree</h6>
+			</div>
+			<div class="card-body">
+				<div id="chart"></div>
+			</div>
+		</div>
+	</div>
+	<div class="col-6">
+		<div class="card shadow mb-4 col">
+			<div class="card-header py-3">
+				<h6 class="m-0 font-weight-bold text-primary">Chart Employee by Gender</h6>
+			</div>
+			<div class="card-body">
+				<div id="chart2"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+@section scripts {
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script type="text/javascript" src="~/js/chart.js"></script>
+}
